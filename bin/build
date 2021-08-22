@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+const gulp = require('gulp');
+const clean = require('gulp-clean');
+const react = require('gulp-react');
+const gutil = require('gulp-util');
+
+gulp.task('clean', function () {
+  return gulp.src(['public/js/build/'], {read: false})
+    .pipe(clean());
+});
+
+gulp.task('build-react', () => {
+  return gulp.src(['public/jsx/**/*.js', '!public/jxs/component/*.js'])
+    .pipe(react())
+    .pn('error', gutil.log)
+    .pipe(gulp.dest('public/build/'))
+});
+
+return gulp.task('start', gulp.series ('clean', 'build-react'),(done) => {
+  console.log('Done building!');
+});

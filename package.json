@@ -1,0 +1,28 @@
+{
+  "name": "dodogee",
+  "version": "1.0.0",
+  "description": "dodogee",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steven20406/dodogee.git"
+  },
+  "author": "steven_chang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/steven20406/dodogee/issues"
+  },
+  "homepage": "https://github.com/steven20406/dodogee#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-react": "^4.0.0",
+    "gulp-util": "^3.0.8",
+    "koa": "^2.7.0",
+    "koa-router": "^7.4.0",
+    "react": "^16.8.6"
+  }
+}
