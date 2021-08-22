@@ -6,6 +6,7 @@ const Router = require('koa-router');
 require('./lib/service')(app);
 
 const routes = new Router();
+console.log('Server running')
 
 routes.get('/', (ctx, next) => {
   ctx.body = 'hello'
